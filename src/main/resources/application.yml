@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/keycloa-kproduits_db
+    username: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/SpringSecurityKeycloakRealm
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+
+server:
+  port: 8081
+
+# jwt config
+jwt:
+  auth:
+    converter:
+      resource-id: my-app-client
+      principal-attribute: principal_username
+
+logging:
+  level:
+    org.springframework.security: TRACE
