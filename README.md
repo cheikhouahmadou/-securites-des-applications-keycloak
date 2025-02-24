@@ -34,3 +34,44 @@ L'interface d'administration de Keycloak affiche la liste des clients configuré
  
 ![C05](https://github.com/user-attachments/assets/b38c637f-65f1-49c3-bf5b-b4b2a1318ad2)
 
+
+Structure du projet
+
+![C07](https://github.com/user-attachments/assets/242ca36c-c30e-49b9-8ae8-208831f15c87)
+
+
+issuer-uri : L'URL de l'émetteur des tokens JWT (Keycloak), pointant vers le Realm SpringSecurityKeycloakRealm.
+jwk-set-uri : L'URL pour récupérer les clés publiques qui permettent de vérifier les JWT signés par Keycloak.
+
+
+![C08](https://github.com/user-attachments/assets/66626ef4-7275-4f3b-af22-7b8acc30ba8e)
+
+
+L'utilisateur lamine peut voir la liste en utilisant son token
+l'utilisatuer cheikhou role admin peut acceder sur (/admin) pour creer un produit
+
+
+![C09](https://github.com/user-attachments/assets/d0b3a733-4e15-4587-8481-3740ea8a5277)
+
+
+![C10](https://github.com/user-attachments/assets/8df63b53-c87f-4bab-b050-2fa50262c754)
+
+
+Test sur postman 
+
+![C11](https://github.com/user-attachments/assets/99558ac6-d3ce-446c-a557-abb445adcdb7)
+
+
+![C12](https://github.com/user-attachments/assets/13baa7df-0a79-44da-bf65-69b72ad3d8b5)
+
+
+![C13](https://github.com/user-attachments/assets/e765a7d5-4bc2-4c52-9cab-979ef16b0d47)
+
+
+![C14](https://github.com/user-attachments/assets/999d0d90-52fc-414d-a21c-fc3f82aa34b8)
+
+
+
+
+
+
